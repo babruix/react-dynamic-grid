@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Row from './Row';
 
 export default class Grid extends React.Component {
@@ -17,9 +17,9 @@ export default class Grid extends React.Component {
         padding: "6px"
       }}>
         <input type="range" value={this.state.x} min={1} max={25}
-               onChange={(e)=>this.setState({x: parseInt(e.target.value)})}/>
+               onChange={(e)=>this.setState({x: parseInt(e.target.value, 0)})}/>
         <input type="range" value={this.state.y} min={1} max={25}
-               onChange={(e)=>this.setState({y: parseInt(e.target.value)})}/>
+               onChange={(e)=>this.setState({y: parseInt(e.target.value, 0)})}/>
       </div>
       <div style={{
         display: "inline-block",

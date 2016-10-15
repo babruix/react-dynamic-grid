@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
 const randomColor = function () {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -13,7 +13,6 @@ export default class Box extends React.Component {
   }
 
   render() {
-    console.log(this);
     return <div style={{
       display: "inline-block",
       background: this.state.color,
